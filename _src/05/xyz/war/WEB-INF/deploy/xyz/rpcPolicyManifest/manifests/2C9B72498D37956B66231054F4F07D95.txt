@@ -1,0 +1,2 @@
+serviceClass: com.demo.xyz.client.PacktAuthenticatorService
+path: 7CFE5E8FA24356776D6909132D5A4194.gwt.rpc

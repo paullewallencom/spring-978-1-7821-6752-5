@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="utf-8" />
+    <title>SigninPage</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+ 
+<body>
+        <form wicket:id="signinForm">
+			
+		<input type="text" wicket:id="username" /><br />
+		<br />
+		
+		<input type="password" wicket:id="password" /><br />
+		<br />
+		<input type="submit" />
+ <div id="errorMessages" wicket:id="feedback"></div>
+    
+    </form>
+ 
+    <p>
+        <i>Hint: try jimmy/jimmy or tommy/tommy</i>
+    </p>
+ 
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:lang="http://www.springframework.org/schema/lang"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/jee   http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/lang  http://www.springframework.org/schema/lang/spring-lang.xsd
+        http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd">
+ 
+    <context:annotation-config />
+    <context:component-scan base-package="com.packt.springsecurity.mongodb.controller" />
+ <context:component-scan base-package="com.packt.springsecurity.mongodb.manager" />
+<context:component-scan base-package="com.packt.springsecurity.mongodb.dao" />
+<context:component-scan base-package="com.packt.springsecurity.mongodb.documententity" />
+
+    <bean id="jspViewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+            value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+        <mongo:mongo host="127.0.0.1" port="27017" />
+	<mongo:db-factory dbname="horrordb" />
+ 
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+	</bean>  
+        
+        <bean id="horrorMovieDAO" class="com.packt.springsecurity.mongodb.dao.HorrorMovieDaoImpl" />
+    <bean id="horrorMovieManager" class="com.packt.springsecurity.mongodb.manager.HorrorMovieManagerImpl" />
+     <bean id="UsersDAO" class="com.packt.springsecurity.mongodb.dao.UsersDAOImpl" />
+    <bean id="userManager" class="com.packt.springsecurity.mongodb.manager.UserManagerImpl" />
+   <bean id="mongoUserDetailsService" class="com.packt.springsecurity.mongodb.controller.MongoUserDetailsService" />
+        
+<!--     <bean id="HorroMovieController" class="com.packt.springsecurity.mongodb.controller.HorrorMovieController" />-->
+         
+</beans>

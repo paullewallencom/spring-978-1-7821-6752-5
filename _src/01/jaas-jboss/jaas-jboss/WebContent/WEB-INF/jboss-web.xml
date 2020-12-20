@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <jboss-web> -->
+<!-- <security-domain>java:/jaas/other</security-domain> -->
+<!-- </jboss-web> -->
+<jboss-web>
+<security-domain>java:/jaas/encryptme</security-domain>
+</jboss-web>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans   xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:security="http://www.springframework.org/schema/security"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+ http://www.springframework.org/schema/security
+ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+     
+<bean id="authenticationFailureHandler"
+    class="org.springframework.security.web.authentication.ExceptionMappingAuthenticationFailureHandler">
+    <property name="exceptionMappings">
+        <props>
+            <prop key="org.springframework.security.authentication.BadCredentialsException">/jsp/login?error='badCredentials'</prop>
+            <prop key="org.springframework.security.authentication.CredentialsExpiredException">/jsp/login?error='credentialsExpired'</prop>
+            <prop key="org.springframework.security.authentication.LockedException">/jsp/login?error='accountLocked'</prop>
+            <prop key="org.springframework.security.authentication.DisabledException">/jsp/login?error='accountDisabled'</prop>
+        </props>
+    </property>
+    </bean>
+	<security:http auto-config='true'>
+		<security:intercept-url pattern="/jsp/login*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<security:intercept-url pattern="/jsp/login_error*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<security:intercept-url pattern="/**" access="ROLE_SELLER" />
+		<security:form-login login-page='/jsp/login' authentication-failure-handler-ref="authenticationFailureHandler" />
+	</security:http>
+<security:authentication-manager>
+   <security:authentication-provider>
+      <security:jdbc-user-service data-source-ref="derbydataSource"
+            users-by-username-query=" select username,password ,'true' as enabled from users where username=?"  
+ 
+		   authorities-by-username-query=" 
+		      select u.username as username, ur.authority as authority from users u, user_roles ur  
+	      where u.user_id = ur.user_id and u.username =?"
+         /> 
+</security:authentication-provider>  
+</security:authentication-manager>
+
+<security:global-method-security secured-annotations="enabled" />
+ 
+</beans>

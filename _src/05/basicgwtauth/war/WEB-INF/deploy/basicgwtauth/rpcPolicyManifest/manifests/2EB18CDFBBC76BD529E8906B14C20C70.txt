@@ -1,0 +1,2 @@
+serviceClass: com.packt.basicgwtauth.client.GreetingService
+path: 08F51D6AB88A4E7B2C9F93D39C16DDA7.gwt.rpc

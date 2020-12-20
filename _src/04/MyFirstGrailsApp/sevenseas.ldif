@@ -1,0 +1,216 @@
+version: 1
+
+dn: o=sevenseas
+objectClass: top
+objectClass: organization
+o: sevenSeas
+
+dn: ou=people,o=sevenSeas
+objectClass: top
+objectClass: organizationalUnit
+ou: people
+description: Contains entries which describe persons (seamen)
+
+dn: ou=groups,o=sevenSeas
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+description: Contains entries which describe groups (crews, for instance)
+
+dn: cn=Horatio Hornblower,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: Horatio Hornblower
+sn: Hornblower
+description: Capt. Horatio Hornblower, R.N
+givenname: Horatio
+mail: hhornblo@royalnavy.mod.uk
+uid: hhornblo
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=William Bush,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: William Bush
+sn: Bush
+description: Lt. William Bush
+givenname: William
+mail: wbush@royalnavy.mod.uk
+manager: cn=Horatio Hornblower,ou=people,o=sevenSeas
+uid: wbush
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=Thomas Quist,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: Thomas Quist
+sn: Quist
+description: Seaman Quist
+givenname: Thomas
+mail: tquist@royalnavy.mod.uk
+manager: cn=Horatio Hornblower,ou=people,o=sevenSeas
+uid: tquist
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=Moultrie Crystal,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: Moultrie Crystal
+sn: Crystal
+description: Lt. Crystal
+givenname: Moultrie
+mail: mchrysta@royalnavy.mod.uk
+manager: cn=Horatio Hornblower,ou=people,o=sevenSeas
+uid: mchrysta
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=Horatio Nelson,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: Horatio Nelson
+sn: Nelson
+description: Lord Horatio Nelson
+givenname: Horatio
+mail: hnelson@royalnavy.mod.uk
+uid: hnelson
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=Thomas Masterman Hardy,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: Thomas Masterman Hardy
+sn: Hardy
+description: Sir Thomas Masterman Hardy
+givenname: Thomas
+mail: thardy@royalnavy.mod.uk
+manager: cn=Horatio Nelson,ou=people,o=sevenSeas
+uid: thardy
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=Cornelius Buckley,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: Cornelius Buckley
+sn: Buckley
+description: LM Cornelius Buckley
+givenname: Cornelius
+mail: cbuckley@royalnavy.mod.uk
+manager: cn=Horatio Nelson,ou=people,o=sevenSeas
+uid: cbuckley
+userpassword:: cGFzcw==
+
+dn: cn=William Bligh,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: William Bligh
+sn: Bligh
+description: Captain William Bligh
+givenname: William
+mail: wbligh@royalnavy.mod.uk
+uid: wbligh
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=Fletcher Christian,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: Fletcher Christian
+sn: Christian
+description: Lieutenant Fletcher Christian
+givenname: Fletcher
+mail: fchristi@royalnavy.mod.uk
+manager: cn=William Bligh,ou=people,o=sevenSeas
+uid: fchristi
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=John Fryer,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: John Fryer
+sn: Fryer
+description: Master John Fryer
+givenname: John
+mail: jfryer@royalnavy.mod.uk
+manager: cn=William Bligh,ou=people,o=sevenSeas
+uid: jfryer
+userpassword:: e1NIQX1uVTRlSTcxYmNuQkdxZU8wdDl0WHZZMXU1b1E9
+
+dn: cn=John Hallett,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: John Hallett
+sn: Hallett
+description: Midshipman John Hallett
+givenname: John
+mail: jhallett@royalnavy.mod.uk
+manager: cn=William Bligh,ou=people,o=sevenSeas
+uid: jhallett
+userpassword:: cGFzcw==
+
+dn: cn=anjuadmin,ou=people,o=sevenseas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: anjuadmin
+sn: admin
+mail: admin@test.com
+uid: anjuadmin
+userPassword:: MTIzNDU2
+
+dn: cn=admin,ou=groups,o=sevenseas
+objectClass: top
+objectClass: groupOfUniqueNames
+cn: admin
+uniqueMember: cn=anjuadmin,ou=people,o=sevenSeas
+uniqueMember: cn=mangala,ou=people,o=sevenSeas
+
+dn: cn=test+sn=test,ou=people,o=sevenseas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: test
+sn: test
+mail: test@test.com
+uid: test
+userPassword:: cGFzcw==
+
+dn: cn=User,ou=groups,o=sevenSeas
+objectClass: top
+objectClass: groupOfUniqueNames
+cn: User
+uniqueMember: cn=test+sn=test,ou=people,o=sevenSeas
+uniqueMember: cn=Horatio Hornblower,ou=people,o=sevenSeas
+
+dn: cn=mangala,ou=people,o=sevenSeas
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+cn: mangala
+sn: mangala
+mail: mangala@test.com
+userPassword:: MTIzNDU2
+

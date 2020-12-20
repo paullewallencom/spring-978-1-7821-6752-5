@@ -1,0 +1,23 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+   <package name="default" namespace="/" extends="struts-default">
+        <action name="helloWorld">
+            <result>success.jsp</result>
+        </action>
+        
+      <action name="login">
+			<result>login.jsp</result>
+		</action>
+
+		<action name="loginfailed">
+			<result>login.jsp?error=true</result>
+		</action>
+		
+		<action name="welcome" >
+		<result>secure/hello.jsp</result>
+		</action>
+	
+    </package>
+</struts>

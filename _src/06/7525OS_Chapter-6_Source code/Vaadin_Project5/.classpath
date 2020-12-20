@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v6.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=Vaadin_Project5&amp;ivyXmlPath=ivy.xml&amp;confs=default&amp;ivySettingsPath=%24%7Bworkspace_loc%3AVaadin_Project5%2Fivysettings.xml%7D&amp;loadSettingsOnDemand=false&amp;propertyFiles=">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=Vaadin_Project5&amp;ivyXmlPath=ivy.xml&amp;confs=widgetset-compile&amp;ivySettingsPath=%24%7Bworkspace_loc%3AVaadin_Project5%2Fivysettings.xml%7D&amp;loadSettingsOnDemand=false&amp;propertyFiles="/>
+	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=Vaadin_Project5&amp;ivyXmlPath=ivy.xml&amp;confs=nodeploy&amp;ivySettingsPath=%24%7Bworkspace_loc%3AVaadin_Project5%2Fivysettings.xml%7D&amp;loadSettingsOnDemand=false&amp;propertyFiles="/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/aspectjrt-1.6.8.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/aspectjweaver-1.6.8.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.aop-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.asm-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.aspects-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.beans-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.context-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.context.support-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.core-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.expression-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.instrument-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.instrument.tomcat-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.web-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/org.springframework.web.servlet-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/spring-security-config-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/spring-security-core-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Spring_Security_PACKT_Workspace/Vaadin_Project1/WebContent/WEB-INF/lib/spring-security-web-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/anjana.m/.ivy2/cache/com.vaadin/vaadin-server/jars/vaadin-server-7.1.0.jar" rootpath="C:/Documents and Settings/anjana.m/.ivy2/cache/com.vaadin/vaadin-server/sources/vaadin-server-7.1.0-sources.jar" sourcepath="C:/Documents and Settings/anjana.m/.ivy2/cache/com.vaadin/vaadin-server/sources/vaadin-server-7.1.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Documents and Settings/anjana.m/.ivy2/cache/com.vaadin/vaadin-server/javadocs/vaadin-server-7.1.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
